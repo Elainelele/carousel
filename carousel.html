@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片切换</title>
+	<meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="carousel.css">
+</head>
+<body>
+	<div style="width: 500px; margin:0 auto">
+		<div class="carousel" data-carousel>
+			<ul class="carousel-cont">
+				<li class="cont-item"><a href="#"><img src="images/1.jpg"/></a></li>
+				<li class="cont-item"><a href="#"><img src="images/2.jpg"/></a></li>
+				<li class="cont-item"><a href="#"><img src="images/3.jpg"/></a></li>
+				<li class="cont-item"><a href="#"><img src="images/4.jpg"/></a></li>
+			</ul>
+		</div>
+		<span style="background: #e5e5e5; color: #333; line-height:30px; padding: 0 7px; float:left" onclick='$(".carousel").Carousel("prev")'>prev</span>
+		<span style="background: #e5e5e5; color: #333; line-height:30px; padding: 0 7px; float:right" onclick='$(".carousel").Carousel("next")'>next</span>
+	</div>
+	<script src="zepto.min.js"></script>
+	<script src="carousel.js"></script>
+</body>
+</html>
